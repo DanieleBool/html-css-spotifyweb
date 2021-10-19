@@ -1,10 +1,11 @@
-/* commons */
+/* commons_________________________________________________ */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'open sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 .row::after{
@@ -13,36 +14,96 @@
     clear: both;
 }
 
-/* main (inizio dalla versione tablet) */
+.white{
+    color: white;
+}
 
-/* contenitori principali */
+.upper{
+    text-transform: uppercase;
+}
+
+.inline{
+    display: inline-block;
+}
+
+/* MAIN (inizio dalla versione tablet)_____________________ */
+
 main{
     display: flex;
     height: calc(100vh - 70px );
+    background-color: #141922;
 }
 
-.nav1{ 
+/* nav lato sinistro________________________________________ */
+
+.nav1 img{
+    width: 100px;
+}
+
+.nav1{
+    color: #A3A3A3;
+    font-size: 11px;
+    padding: 11px 0px 5px 0px;
+    background-color: black;
+    display: flex;
     flex-direction: column;
     width: 150px;
+    justify-content: space-between;
 }
+
+.nav1 .over ul li, .nav1 .down div{
+    padding-left: 11px;
+}
+
+.nav1 ul{
+    list-style: none;
+}
+
+.nav1 ul li{
+    line-height: 27px;
+    vertical-align: middle;
+}
+
+.nav1 ul li a{
+    text-decoration: none;
+}
+
+.symbols i{
+    font-size: 15px;
+}
+#plus{
+    font-size: 30px;
+}
+
+.nav1 ul:not(:first-child){
+    padding-top: 10px;
+}
+.nav1 ul li:hover{
+    border-left: 2.5px solid greenyellow;
+    color: white;
+}
+
+.nav1 ul li:hover:only-child{
+    border-left: none;
+}
+
+hr{
+    width: 85%;
+    color: #A3A3A3;
+    margin: 10px auto;
+}
+/*  
+.down{
+    justify-self: flex-end;
+}*/
+
+/* contenuto del sito_______________________________________ */
 
 .content{
     width: calc( 100% - 150px );
 }
 
-footer{
-    height: 70px;
-    width: 100%;
-}
-
-/* nav */
-
-.nav1 img{
-    width: 50px;
-}
-
-/* contenuto del sito */
-
+/* bottone upgrade */
 .upgrade{
     height: 60px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -52,7 +113,7 @@ footer{
 }
 
 .upgrade button {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 12px;
     text-transform: uppercase;
@@ -67,11 +128,14 @@ footer{
     width: 100%;
 }
 
+/* footer____________________________________________________ */
 
+footer{
+    height: 70px;
+    width: 100%;
+}
 
-
-
-/* debugs */
+/* debugs 
 
 .nav1{
     background-color: red;
@@ -85,7 +149,7 @@ main{
 footer{
     background-color: blueviolet;
 }
-
+*/
 
 @media screen and (max-width: 480px) {}
 @media all and (min-width: 480px) and (max-width: 768px) {}

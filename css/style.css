@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+
 }
 
 .row::after{
@@ -32,27 +33,31 @@ main{
     display: flex;
     height: calc(100vh - 70px );
     background-color: #141922;
+    color: #A3A3A3;
+    font-size: 12px;
 }
 
 /* nav lato sinistro________________________________________ */
 
 .nav1 img{
-    width: 100px;
+    width: 120px;
 }
 
 .nav1{
-    color: #A3A3A3;
-    font-size: 11px;
-    padding: 11px 0px 5px 0px;
+    padding: 15px 0px 5px 0px;
     background-color: black;
     display: flex;
     flex-direction: column;
-    width: 150px;
+    width: 200px;
     justify-content: space-between;
 }
 
+.nav1 h4{
+    font-weight: bolder;
+}
+
 .nav1 .over ul li, .nav1 .down div{
-    padding-left: 11px;
+    padding-left: 15px;
 }
 
 .nav1 ul{
@@ -60,7 +65,7 @@ main{
 }
 
 .nav1 ul li{
-    line-height: 27px;
+    line-height: 30px;
     vertical-align: middle;
 }
 
@@ -71,6 +76,7 @@ main{
 .symbols i{
     font-size: 15px;
 }
+
 #plus{
     font-size: 30px;
 }
@@ -78,20 +84,34 @@ main{
 .nav1 ul:not(:first-child){
     padding-top: 10px;
 }
+
 .nav1 ul li:hover{
     border-left: 2.5px solid greenyellow;
     color: white;
 }
 
-.nav1 ul li:hover:only-child{
+.over ul li.no-border:hover {
     border-left: none;
 }
 
 hr{
     width: 85%;
-    color: #A3A3A3;
+    background-color: #A3A3A3;
+    height: 1px;
+    border: 0;
     margin: 10px auto;
 }
+
+#ico-user{
+    font-size: 21px;
+    margin-top: 1px;
+}
+
+#plus, #ico-user, .symbols i{
+    vertical-align: middle;
+    margin-right: 4px;    
+}
+
 /*  
 .down{
     justify-self: flex-end;
@@ -100,31 +120,78 @@ hr{
 /* contenuto del sito_______________________________________ */
 
 .content{
-    width: calc( 100% - 150px );
+    width: calc(100% - 200px);
+    height: calc(100vh - 140px);
 }
 
 /* bottone upgrade */
 .upgrade{
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 70px;
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 5;
     text-align: right;
     line-height: 60px;
+    position: fixed;
+    width: calc(100% - 200px);
 }
 
 .upgrade button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 550;
     margin-right: 5px;
-    padding: 8px 25px;
+    padding: 10px 30px;
     border-radius: 40px;
     border: 1px solid white;
-  }
+}
+
+/* nav orizzontale */
 
 .nav2{
+    width: 100%;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.nav2 a{
+    display: inline-block;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin: 20px 10px;
+}
+
+/* sezione delle playlist */
+
+.main-content{
+    width: 100%;
+    margin-top: 70px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.playlist{
+    padding: 15px;
+}
+
+.playlist h1{
+    color: white;
+    font-weight: bolder;
+}
+
+.recently{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recently div{
+    width: calc(100% / 4 - 1%);
+    padding: 1%;
+}
+
+.recently img{
     width: 100%;
 }
 
@@ -133,6 +200,8 @@ hr{
 footer{
     height: 70px;
     width: 100%;
+    background-color: #282828 ;
+    z-index: 4;
 }
 
 /* debugs 

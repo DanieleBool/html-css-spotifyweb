@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <title>Spotify</title>
 </head>
 <body>
@@ -17,16 +17,16 @@
         <nav class="nav1">
             <div class="over">
             <ul>
-                <li><img src="img/logo.svg" alt="logo"></li>
+                <li class="no-border"><img src="img/logo.svg" alt="logo"></li>
             </ul>
             <ul class="symbols">
-                <li><i class="fas fa-home"></i> <a> Home</a></li>
-                <li><i class="fas fa-search"></i> <a> Cerca</a></li>
-                <li><i class="fas fa-book-open"></i> <a> La tua libreria</a></li>
+                <li><a><i class="fas fa-home"></i> Home</a></li>
+                <li><a><i class="fas fa-search"></i> Cerca</a></li>
+                <li><a><i class="fas fa-book-open"></i> La tua libreria</a></li>
             </ul>
             <ul>
-                <li><h4 class="white upper">playlist</h4></li>
-                <li><i class="fas fa-plus-square" id="plus"></i><a> Crea Playlist</a></li>
+                <li class="no-border"><h4 class="white upper">playlist</h4></li>
+                <li class="no-border"><a><i class="fas fa-plus-square" id="plus"></i> Crea Playlist</a></li>
                 <li><a>Nome Playlist</a></li>
                 <li><a>Nome Playlist</a></li>
                 <li><a>Nome Playlist</a></li>
@@ -36,10 +36,10 @@
             </ul>
             </div>
             <div class="down">
-                <div><a><i class="far fa-arrow-alt-circle-down"><span></i> Installa app</a></span></div>
+                <div><a><i class="far fa-arrow-alt-circle-down"><span></i> Installa app</a></div>
                 <hr>
                 <div class="margin">
-                    <a><i class="fas fa-user-circle"></i><span><h4 class="inline white">  John Doe</h4></span></a>
+                    <a><i class="fas fa-user-circle" id="ico-user"></i><span><h4 class="inline white">  John Doe</h4></a>
                 </div>
             </div>
 
@@ -47,20 +47,39 @@
 
         <section class="content">
             <div class="upgrade"><button>Effettua l'upgrade</button></div>
-            <div class="nav2">
-                <ul>
-                    <li>in evidenza</li>
-                    <li>podcast</li>
-                    <li>classifiche</li>
-                    <li>generi e mood</li>
-                    <li>nuove uscite</li>
-                    <li>scopri</li>
-                    
-                </ul>
+            <div class="main-content">
+                <div class="nav2">
+                    <a>in evidenza</a>
+                    <a>podcast</li>
+                    <a>classifiche</a>
+                    <a>generi e mood</a>
+                    <a>nuove uscite</a>
+                    <a>scopri</a>
+                </div>
+                <div class="playlist">
+                    <h1>Recentrly played</h1>
+                    <div class="recently">
+                        <div><img src="img/metal_lifting.jpg" alt=""></div>
+                        <div><img src="img/stranger.jpeg" alt=""></div>
+                        <div><img src="img/aquietplace.jpeg" alt=""></div>
+                        <div><img src="img/split.jpeg" alt=""></div>
+                        <div><img src="img/cure.jpeg" alt=""></div>
+                        <div><img src="img/sinister.jpeg" alt=""></div>
+                    </div>
+                    <h1>Creato per John Doe</h1>
+                    <div class="create">
+                        <div><img src="img/radar.jpeg" alt=""></div>
+                        <div><img src="img/mixdaily.jpeg" alt=""></div>
+                    </div>
+                    <h1>Aritisti più popolari</h1>
+                    <div>
+                        <div><img src="img/youg.jpeg" alt=""></div>
+                        <div><img src="img/einaudi.jpeg" alt=""></div>
+                    </div>
+                </div>
             </div>
-            <div>
 
-            </div>
+
         </section>        
     </main>
     <!-- fine main -->

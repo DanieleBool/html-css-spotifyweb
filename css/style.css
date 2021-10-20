@@ -17,6 +17,7 @@
 
 .white{
     color: white;
+    font-weight: bolder;
 }
 
 .upper{
@@ -179,20 +180,42 @@ hr{
 .playlist h1{
     color: white;
     font-weight: bolder;
+    margin-bottom: 9px;
+    font-size: 24px;
 }
 
-.recently{
+.title{
+    padding-left: 1%;
+    margin: 30px 0 24px;
+}
+
+.playlist .title:first-child{
+    margin-top: 0;
+}
+
+.container-img{
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
-.recently div{
-    width: calc(100% / 4 - 1%);
+.container-img div{
+    width: calc(100% / 4);
     padding: 1%;
 }
 
-.recently img{
+.container-img img{
     width: 100%;
+}
+
+.container-img h3{
+    color: white;
+    font-weight: 600;
+    margin: 11px 0 7px;
+}
+
+.artist img{
+    border-radius: 50%;
 }
 
 /* footer____________________________________________________ */
@@ -202,7 +225,26 @@ footer{
     width: 100%;
     background-color: #282828 ;
     z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    color: #A3A3A3;
+    font-size: 11px;
+    padding: 10px 5px;
 }
+
+
+.playing, .icon, .play, .volume {
+    display: flex;
+    /* margin: auto 0;  ridondante */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.playing img{
+    height: 35px; 
+/* 60% */
+}
+
 
 /* debugs 
 

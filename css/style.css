@@ -121,7 +121,7 @@ hr{
 /* contenuto del sito_______________________________________ */
 
 .content{
-    width: calc(100% - 50px);
+    width: calc(100% - 200px);
     height: calc(100vh - 140px);
 }
 
@@ -134,8 +134,7 @@ hr{
     text-align: right;
     line-height: 60px;
     position: fixed;
-    width: 100%;
-    width: calc(100% - 50px);
+    width: calc(100% - 200px);
 }
 
 .upgrade button {
@@ -404,6 +403,42 @@ footer{
         text-align: center;
         height: 50px;
     }
+
+    .content{
+        width: calc(100% - 50px);
+    }
+    
+    /* bottone upgrade */
+    .upgrade{
+        width: calc(100% - 50px);
+    }
+
+    .icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .icon i{
+        padding: 3px 0px 0px 3px;
+    }
+
+    .cont-play{
+        flex-grow: 1;
+    }
+
+    .cont-volume i{
+        font-size: 9px;
+    }
+
+    .desc{
+        font-size: 9px;
+    }
+
+    .play{
+        width: 70%;
+    }
+
 }    
 
 @media (min-width: 517px) and (max-width: 576px) {
@@ -421,4 +456,3 @@ footer{
     .container-img div{width: calc(100% / 6);}
 
 }
-

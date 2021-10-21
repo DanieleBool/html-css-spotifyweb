@@ -233,7 +233,7 @@ footer{
 }
 
 
-.playing, .icon, .play, .volume {
+.cont-recording, .playing, .icon, .cont-play, .cont-volume {
     display: flex;
     /* margin: auto 0;  ridondante */
     justify-content: space-evenly;
@@ -245,6 +245,13 @@ footer{
 /* 60% */
 }
 
+.cont-play{
+    display: flex;
+    justify-content: space-evenly;
+}
+.play{
+    align-self: flex-end;
+}
 
 /* debugs 
 

@@ -161,7 +161,7 @@ hr{
     display: inline-block;
     font-size: 11px;
     text-transform: uppercase;
-    margin: 20px 10px;
+    margin: 15px 5px;
 }
 
 /* sezione delle playlist */
@@ -222,22 +222,45 @@ hr{
 
 footer{
     height: 70px;
-    width: 100%;
     background-color: #282828 ;
-    z-index: 4;
     display: flex;
     justify-content: space-between;
     color: #A3A3A3;
     font-size: 11px;
     padding: 10px 5px;
+    align-items: center;
+    width: 100%;
+    z-index: 9;
+    position: fixed;
 }
 
-
-.cont-recording, .playing, .icon, .cont-play, .cont-volume {
+/* prima sezione footer */
+.cont-recording{
     display: flex;
-    /* margin: auto 0;  ridondante */
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    width: 25%;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+
+.icon i{
+    padding-left: 12px;
+    display: inline-block;
+}
+
+.playing{
+    display: flex;
+
+}
+
+.desc{
+    padding-left: 10px;
+    align-self: center;
 }
 
 .playing img{
@@ -245,13 +268,70 @@ footer{
 /* 60% */
 }
 
+/* seconda sezione footer */
+
 .cont-play{
     display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.icon-play{
+    display: flex;
     justify-content: space-evenly;
+    font-size: 13px;
+    color: white;
+    margin: 0 auto 12px;
+    align-items: center;
+    width: 70%;
 }
+
+#icon-size20{
+    font-size: 22px;
+}
+
 .play{
-    align-self: flex-end;
+    width: 80%;
 }
+
+/* terza sezione footer */
+.cont-volume{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+}
+
+.cont-volume input{
+    width: 50%;
+}
+
+input[type='range'] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: #A3A3A3;
+    border-radius: 10px;  
+    height: 3px; 
+    align-self: center;
+}
+  
+input[type='range']::-webkit-slider-runnable-track {
+    height: 3px;
+    -webkit-appearance: none;
+    color: white;
+}
+  
+input[type='range']::-webkit-slider-thumb {
+    width: 1px;
+    -webkit-appearance: none;
+    height: 3px;
+    cursor: pointer;
+    background: white;
+    box-shadow: -400px 0 0 400px white;
+}
+
+
+
+
 
 /* debugs 
 

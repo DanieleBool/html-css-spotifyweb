@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>
     </main>
     <!-- fine main -->
     <!-- inizio footer -->
@@ -94,7 +94,7 @@
         <section class="cont-recording">       
             <div class="playing">
                 <img src="img/sinister.jpeg" alt="play">
-                <div>
+                <div class="desc">
                     <h4 class="white">Sinister</h4>
                     <span>Brano Nome</span>
                 </div>
@@ -105,21 +105,24 @@
             </div> 
         </section>
         <section class="cont-play">
-            <i class="fas fa-random"></i>
-            <i class="fas fa-step-backward"></i>
-            <i class="far fa-play-circle"></i>
-            <i class="fas fa-step-forward"></i>
-            <i class="fas fa-undo-alt"></i>
-            <input class="play" type="range">
+            <div class="icon-play">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle" id="icon-size20"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-undo-alt"></i>                
+            </div>
+            <input class="play" type="range" min="1" max="30">
         </section>
 
         <section class="cont-volume">
             <i class="fas fa-list"></i>
-            <i class="fas fa-desktop"></i>
+            <i class="fas fa-tv"></i>
             <i class="fas fa-volume-up"></i>
-            <input type="range">
+            <input type="range" min="1" max="30">
         </section>
     </footer>
+
     <!-- fine footer -->
 </body>
 </html>

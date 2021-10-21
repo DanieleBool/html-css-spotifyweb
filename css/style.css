@@ -67,11 +67,11 @@ main{
 
 .nav1 ul li{
     line-height: 30px;
-    vertical-align: middle;
 }
 
 .nav1 ul li a{
     text-decoration: none;
+    vertical-align: middle;
 }
 
 .symbols i{
@@ -121,7 +121,7 @@ hr{
 /* contenuto del sito_______________________________________ */
 
 .content{
-    width: calc(100% - 200px);
+    width: calc(100% - 50px);
     height: calc(100vh - 140px);
 }
 
@@ -134,7 +134,8 @@ hr{
     text-align: right;
     line-height: 60px;
     position: fixed;
-    width: calc(100% - 200px);
+    width: 100%;
+    width: calc(100% - 50px);
 }
 
 .upgrade button {
@@ -329,9 +330,9 @@ input[type='range']::-webkit-slider-thumb {
     box-shadow: -400px 0 0 400px white;
 }
 
-
-
-
+li.imgs{
+    display: none;
+}
 
 /* debugs 
 
@@ -349,5 +350,75 @@ footer{
 }
 */
 
-@media screen and (max-width: 480px) {}
-@media all and (min-width: 480px) and (max-width: 768px) {}
+@media screen and (max-width: 517px) {
+
+    .nav1{
+        width: 50px;
+    }
+
+    .nav1 span, .nav1 a, .nav1 h4, .nav1 hr, .imgl{
+        display: none;
+    }
+
+    .nav1 img{
+        width: 50%;
+    }
+
+    li.imgs{
+        display: table;
+    }
+
+    .nav1 .over ul li, .nav1 .down div{
+        padding: 0;
+    }
+
+    ul li{
+        text-align: center;  
+        margin: 0 auto;        
+    }
+
+    .symbols i, #ico-user{
+        margin-right: 0;
+    }
+
+    .nav1 ul:not(:first-child){
+        padding-top: 0;
+    }
+
+    .nav1 ul li {
+        line-height: 25px;
+    }
+
+    .nav1 {
+        padding: 5px 0px 5px 0px;
+    }
+
+    .container-img div{
+        width: calc(100% / 2);
+    }
+
+    .down{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        height: 50px;
+    }
+}    
+
+@media (min-width: 517px) and (max-width: 576px) {
+    .container-img div{
+        width: calc(100% / 2);}
+}
+
+@media all and (min-width: 576px) and (max-width: 768px){
+    /* ho iniziato da qui */
+}
+
+@media screen and (min-width: 768px) {
+    .cont-recording{width: 15%;}
+    .cont-volume{width: 15%;}
+    .container-img div{width: calc(100% / 6);}
+
+}
+
